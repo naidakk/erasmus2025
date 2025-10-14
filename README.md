@@ -1,4 +1,4 @@
-# erasmus2024
+# Erasmus 2025
 Lecture examples 2025-2026
 
 ## Usage
