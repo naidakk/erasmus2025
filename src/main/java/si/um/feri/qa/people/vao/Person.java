@@ -25,12 +25,12 @@ public class Person {
     public boolean isRelatedTo(Person person) {
         if (person==null ||  this.surname==null || this.email==null)
             return false;
-//        try {
-//            Integer.parseInt(person.surname);
-//            Integer.parseInt(this.surname);
-//            return false;
-//        }catch (Exception e){
-//        }
+        try {
+            Integer.parseInt(person.surname);
+            Integer.parseInt(this.surname);
+            return false;
+        }catch (Exception e){
+        }
         return surname.equalsIgnoreCase(person.surname);
     }
 
