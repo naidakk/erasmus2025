@@ -4,8 +4,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.Data;
 
-@Data
-@Entity
+@Data  //Lombok annotation that automatically generates boilerplate code for you at compile time.
+@Entity //Tells JPA/Hibernate: "This is a database table"
 public class Person {
 
     public Person(String name, String surname, String email) {
@@ -14,8 +14,7 @@ public class Person {
         this.email = email;
     }
 
-    public Person() {
-    }
+    public Person() {}
 
     String name;
     String surname;
