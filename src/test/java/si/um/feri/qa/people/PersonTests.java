@@ -31,6 +31,10 @@ public class PersonTests {
         Assertions.assertTrue(
             new Person("","Pavlič","").isRelatedTo(new Person("","PAVLIČ",""))
         );
+
+        Assertions.assertFalse(
+                new Person("","Kaljanac", "" ).isRelatedTo(new Person("", "Kaljanać", ""))
+        );
     }
 
 

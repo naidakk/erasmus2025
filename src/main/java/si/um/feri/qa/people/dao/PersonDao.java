@@ -16,3 +16,6 @@ public interface PersonDao extends CrudRepository<Person, String> {
 }
 //This is the magic of Spring Data JPA!
 //Even though the interface is empty, Spring automatically implements it for you at runtime with all these methods:
+
+
+//data access object
